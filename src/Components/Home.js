@@ -1,10 +1,10 @@
 import React from 'react';
-import Headers from './Headers';
 
 const Home = () => {
     return (
         <div>
-            <Headers />
+            <h1>hello</h1>
+            <textarea class="textarea textarea-secondary" placeholder="Bio"></textarea>
         </div>
     );
 };
