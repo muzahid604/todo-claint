@@ -25,12 +25,12 @@ const Headers = () => {
                 </div>
                 <div class="navbar-end">
 
-                    {user ? <Link to='/login' onClick={logout} className='mx-2 text-dark p-2 fw-bold btn-outline-success btn-danger hover-color rounded-pill'>LOG OUT</Link>
-                        : <Link to="/login" className='mx-2 text-dark p-2 fw-bold btn-outline-success btn-light hover-color rounded-pill'>LOG IN</Link>}
+                    {user ? <Link to='/login' onClick={logout} className='mx-2 text-dark p-2 btn btn-ghost rounded'>LOG OUT</Link>
+                        : <Link to="/login" className='mx-2 text-dark p-2 btn btn-ghost rounded'>LOG IN</Link>}
 
 
                     {
-                        user ? <p></p> : <Link to="/register" className='mx-2 text-dark p-2 fw-bold btn-outline-success btn-light hover-color rounded-pill'>SIGN UP</Link>
+                        user ? <p></p> : <Link to="/register" className='mx-2 text-dark p-2 btn btn-ghost rounded'>SIGN UP</Link>
 
                     }
 
