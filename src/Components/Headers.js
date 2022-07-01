@@ -21,7 +21,8 @@ const Headers = () => {
                     </div>
                 </div>
                 <div class="navbar-center">
-                    <Link to='/' class="btn btn-ghost normal-case text-xl">Today</Link>
+                    <Link to='/' class="btn btn-ghost normal-case text-xl">Home</Link>
+                    <Link to='/calendar' class="btn btn-ghost normal-case text-xl">Today</Link>
                 </div>
                 <div class="navbar-end">
 

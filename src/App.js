@@ -5,18 +5,23 @@ import Register from './Components/Register';
 import Headers from './Components/Headers';
 import RequireAuth from './Components/RequireAuth';
 import AddTask from './Components/AddTask';
+import Calendar from './Components/Calendar';
 
 function App() {
   return (
     <div>
       <Headers />
       <Routes>
-        <Route path='/home' element={
+        <Route path='/' element={
+          <Home />
+        }></Route>
+        <Route path='/' element={
           <RequireAuth>
-            <Home />
+            <AddTask />
           </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='/calendar' element={<Calendar />}></Route>
         <Route path='/addtask' element={<AddTask />}></Route>
         <Route path='/register' element={<Register />}></Route>
       </Routes>
