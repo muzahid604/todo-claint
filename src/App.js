@@ -6,6 +6,7 @@ import Headers from './Components/Headers';
 import RequireAuth from './Components/RequireAuth';
 import AddTask from './Components/AddTask';
 import Calendar from './Components/Calendar';
+import Complete from './Components/Complete';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
         <Route path='/' element={
           <RequireAuth>
             <AddTask />
+          </RequireAuth>
+        }></Route>
+        <Route path='/completed' element={
+          <RequireAuth>
+            <Complete />
           </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login />}></Route>
